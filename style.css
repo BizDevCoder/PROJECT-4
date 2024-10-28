@@ -13,7 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(137, 178, 255);
+    background-color: rgb(83, 143, 255);
 }
 
 .container{
@@ -23,4 +23,43 @@ body{
     background-color: white;
     padding: 25px;
     border-radius: 12px;
+}
+
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container  .form{
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label{
+    color: #333;
+}
+
+
+.form .input-box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0px 15px;
+    color: #707070;
+    font-size: 0.8rem;
+    margin-top: 0px 15px;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
 }

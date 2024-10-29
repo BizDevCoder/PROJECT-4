@@ -63,3 +63,15 @@ body{
     display: flex;
     column-gap: 15px;
 }
+
+.form :where(.Gender-option, .Gender){
+    display: flex;
+    column-gap: 50px;
+} 
+.form .Gender{
+    column-gap: 20px;
+    cursor: pointer;
+}
+.form :
+
+/*Responsive*/

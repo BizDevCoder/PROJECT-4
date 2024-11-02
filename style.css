@@ -67,11 +67,77 @@ body{
 .form :where(.Gender-option, .Gender){
     display: flex;
     column-gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
 } 
 .form .Gender{
     column-gap: 20px;
-    cursor: pointer;
 }
-.form :
+
+.Gender input{
+    accent-color: rgb(83, 143, 255);
+}
+.form .Gender-box{
+    padding-bottom: 20px;
+}
+
+.Gender-box h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 25px
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+    color: #333;
+    margin-top: 20px;
+}
+.address :where(input, .seclect-box){
+    margin-top: 15px;
+}
+.column{
+    width: 100%;
+}
+.seclect-box{
+    width: 100%;
+}
+.seclect-box select{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0px 0px;
+    color: #707070;
+    font-size: 0.8rem;
+    margin-top: 0px 15px;
+}
+.form button{
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: none;
+    background-color: rgb(83, 143, 255);
+}
+
+.form button:hover{
+    background-color: rgb(40, 108, 253);
+}
 
 /*Responsive*/
+@media screen and (max-width: 500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+    .form :where(.Gender-option, .Gender){
+        row-gap: 10px;
+    }
+}
+
